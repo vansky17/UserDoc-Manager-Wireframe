@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>HTML wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <section>
+      <header>
+          <h3>Upload Document</h3>
+      </header>
+      <form class='upload-form'>
+          <div>
+            <label for="doc-name">Document name</label>
+            <input placeholder='Document Name' type="text" name='doc-name' id='doc-name' />
+          </div>
+          <div>
+            <label for="part-number">Part number</label>
+            <input type="text" name='part-number' id='part-number' placeholder='Enter part number' />
+          </div>
+          <div>
+            <label for="version">Version</label>
+            <input type="number" name='version' id='version' />
+          </div>
+          <div>
+            <label for="format">Format</label>
+            <select name='format' id='format' placeholder='pdf'>
+              <option>pdf</option>
+              <option>docx</option>
+              <option>xsl</option>
+              <option>ppt</option>
+              <option>html</option>
+            </select>
+          </div>
+          <div>
+            <label for="release-date">Release date</label>
+            <input type="text" name='release-date' id='release-date' placeholder="YYYY-MM-DD">
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea type="textfield" name='description' id='description'></textarea>
+          </div>
+          <div>
+            <label for="author">Author</label>
+            <input type="text" name='author' id='author' />
+          </div>
+          <div>
+            <label for="pg">Assign to product group</label>
+            <select name='pg' id='pg'>
+              <option>Product 1</option>
+              <option>Product 2</option>
+              <option>Product 3</option>
+            </select>
+          </div>
+          <div>
+            <label for="file">Select file to upload:</label>
+            <input type="file" name='file' id='file' />
+          </div>
+          <button type='submit'>Upload</button>
+      </form>
+    </section>
+  </body>
+</html>

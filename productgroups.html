@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>HTML wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <section>
+      <header>
+          <h3>Manage product groups</h3>
+      </header>
+      <form class='product-group-form'>
+          <div>
+            <label for="pg-name">Create new product group</label>
+            <input placeholder='New Product Name' type="text" name='pg-name' id='pg-name' />
+          </div>
+          <button type='submit'>Create</button>
+          <div>
+            <label for="rename">Rename product group</label>
+            <select name='rename' id='rename' >
+              <option>Product 1</option>
+              <option>Product 2</option>
+              <option>Product 3</option>
+            </select>
+            <input type="text" name='new-name' id='new-name' placeholder='Enter new name' />
+          </div>
+          <button type='submit'>Rename</button>
+          <div>
+            <label for="delete">Delete product group</label>
+            <select name='delete' id='delete' >
+              <option>Product 1</option>
+              <option>Product 2</option>
+              <option>Product 3</option>
+            </select>
+          </div>
+          <button type='submit'>Delete</button>
+      </form>
+    </section>
+  </body>
+</html>
